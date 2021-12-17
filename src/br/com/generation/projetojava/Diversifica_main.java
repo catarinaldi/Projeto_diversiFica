@@ -1,59 +1,40 @@
 package br.com.generation.projetojava;
 
-public class Diversifica_main {
-	 /*Main - diversiFica
-	 * Autore: catarina
-	 * Data: 16/12/2021
-	 */	
+import java.util.Scanner;
+
+public class TelaInicio {
 	
-	public static void main(String[] args) {
+	public static void main (String [] args) throws InterruptedException {
 		
-//		CRIAR CONTA
+		Scanner entrada = new Scanner(System.in);
+		User user = new User();
+		TelaInicial telaopcao = new TelaInicial();
 		
-//			EMPRESA
+		
+		int pagina;
 			
-//				CADASTRO DA EMPRESA
-					
-//					INFOS BÁSICAS: FORMULÁRIO | SALVAR
-							
-//						OFERECER EMPREGO
-		
-//							SE SIM: PREENCHER INFOS DA VAGA | SALVAR
-//								OFERECER OUTRA VAGA
-							
-//							SE NÃO: VOLTAR PARA PÁGINA INICIAL
-			
-		
-//			PESSOA FÍSICA
-			
-//				CADASTRO
-					
-//					PREENCHER INFOS | SALVAR
-					
-//						PROCURANDO EMPREGO? SIM/NÃO
-							
-//							SIM: PREENCHER CV | SALVAR | VER LISTA DE EMPRESA > FILTRAR LISTA
-							
-//							NÃO: AVALIAR EMPRESA
-					
-//								PREENCHER O FORMULÁRIO DE AVALIAÇÃO | SALVAR
-
-//									VER LISTA DE EMPRESA > FILTRAR LISTA | VOLTAR PÁGINA INICIAL
-									
+		System.out.println("****** Olá Bem Vindo ao Divesifica ******");
 		
 		
-//		LISTA DE EMPRESAS
-
-//			VER LISTA DE EMPRESA > FILTRAR LISTA			
+		System.out.println();
+		
+		System.out.println("1 : Criar Conta");
+		System.out.println("2 : Lista de Empresas");
+		System.out.print("Informe a opção:");
+		pagina = entrada.nextInt();
+		while(pagina != 1 && pagina != 2 ) {
+			System.out.print("Informe a opção:");
+			pagina = entrada.nextInt();
+		}
+		if(pagina == 1 ){
+			//telaopcao.opcoesCadastro();	
+		}
+		else {
+			System.out.println("LISTA DE EMPRESA");
+		}
 		
 		
-//		0 - RETORNA PARA PÁGINA INICIAL
-		
-//		9 - SALVAR
-		
-		
-		
-
+		entrada.close();
 	}
 
 }
