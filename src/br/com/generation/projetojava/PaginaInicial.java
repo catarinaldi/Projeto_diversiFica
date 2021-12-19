@@ -14,7 +14,7 @@ import java.util.Scanner;
 		int pagina = 0;
 		
 		
-		System.out.println("=============Olá! Bem vinde ao DivesiFica=============");
+		System.out.println("=============Olï¿½! Bem vinde ao DivesiFica=============");
 		
 		
 	
@@ -23,10 +23,10 @@ import java.util.Scanner;
 	
 		System.out.println("1. Criar Conta");
 		System.out.println("2. Lista de Empresas");
-		System.out.print("Insira uma das opções: ");
+		System.out.print("Insira uma das opï¿½ï¿½es: ");
 		pagina = entrada.nextInt();
 		while(pagina != 1 && pagina != 2 ) {
-			System.out.print("Informe a opção: ");
+			System.out.print("Informe a opï¿½ï¿½o: ");
 			pagina = entrada.nextInt();
 		}
 		if(pagina == 1 ){

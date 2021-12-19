@@ -70,10 +70,10 @@ public class User {
 		
 
 		System.out.println("******************************************************");
-		System.out.println("Criar conta de pessoa física");
+		System.out.println("Criar conta de pessoa fï¿½sica");
 		System.out.println("1. Cadastro");
-		System.out.println("0. Página inicial");
-		System.out.print("Insira uma das opções: ");
+		System.out.println("0. Pï¿½gina inicial");
+		System.out.print("Insira uma das opï¿½ï¿½es: ");
 		paginaUserCad = entrada.nextInt();
 		
 		if(paginaUserCad == 0) {
@@ -87,7 +87,7 @@ public class User {
 			System.out.println("******************************************************");
 			System.out.println();
 			
-			System.out.println("=============CADASTRO DE PESSOA FÍSICA=============");
+			System.out.println("=============CADASTRO DE PESSOA Fï¿½SICA=============");
 			
 			
 			System.out.print("Informe seu nome: ");
@@ -102,10 +102,10 @@ public class User {
 			
 			
 			while (cpf.length() != 11) {
-				System.out.print("Informe os números do CPF: ");
+				System.out.print("Informe os nï¿½meros do CPF: ");
 				cpf = entrada.next();
 				if (cpf.length() != 11) {
-						System.out.println("Valor inválido! Digite novamente ");
+						System.out.println("Valor invï¿½lido! Digite novamente ");
 				}
 			 }
 			
@@ -135,15 +135,15 @@ public class User {
 			System.out.println();
 			
 			while(genero != 1 && genero != 2 && genero != 3 && genero != 4 &&  genero != 5 && genero != 6 && genero != 7) {
-				System.out.println("Escolha seu gênero: ");
+				System.out.println("Escolha seu gï¿½nero: ");
 				System.out.println("1. Homem cis ");
 				System.out.println("2. Mulher cis ");
 				System.out.println("3. Homem trans ");
 				System.out.println("4. Mulher trans ");
-				System.out.println("5. Não binário ");
+				System.out.println("5. Nï¿½o binï¿½rio ");
 				System.out.println("6. Outro ");
-				System.out.println("7. Prefiro não dizer ");
-				System.out.print("Insira uma das opções: ");
+				System.out.println("7. Prefiro nï¿½o dizer ");
+				System.out.print("Insira uma das opï¿½ï¿½es: ");
 				genero = entrada.nextInt();
 				if(genero == 1) {
 					genero1 = "Homem cis";
@@ -158,14 +158,14 @@ public class User {
 					genero1 = "Mulher trans";	
 				}
 				if(genero == 5) {
-					genero1 = "Não binário";	
+					genero1 = "Nï¿½o binï¿½rio";	
 				}
 				if (genero == 6) {
-					System.out.println("Informe seu gênero: ");
+					System.out.println("Informe seu gï¿½nero: ");
 					genero1 = entrada.next();		
 				}
 				if (genero == 7) {
-					genero1 = "Prefiro não dizer";		
+					genero1 = "Prefiro nï¿½o dizer";		
 				}
 				
 			}
@@ -176,16 +176,16 @@ public class User {
 			
 			while(sexualidade != 1 && sexualidade != 2 && sexualidade != 3 && sexualidade != 4 && sexualidade != 5 && sexualidade != 6) {
 				System.out.println("Escolha a sua sexualidade: ");
-				System.out.println("1. Lésbica ");
+				System.out.println("1. Lï¿½sbica ");
 				System.out.println("2. Gay ");
 				System.out.println("3. Bissexual ");
 				System.out.println("4. Assexual ");
 				System.out.println("5. Outro ");
-				System.out.println("6. Prefiro não dizer ");
-				System.out.print("Insira uma das opções: ");
+				System.out.println("6. Prefiro nï¿½o dizer ");
+				System.out.print("Insira uma das opï¿½ï¿½es: ");
 				sexualidade = entrada.nextInt();
 				if(sexualidade == 1) {
-					sexualidade1 = "Lésbica";
+					sexualidade1 = "Lï¿½sbica";
 				}
 				if(sexualidade == 2) {
 					sexualidade1 = "Gay";	
@@ -201,7 +201,7 @@ public class User {
 					sexualidade1 = entrada.next();		
 				}
 				if (sexualidade == 6) {
-					sexualidade1 = "Prefiro não dizer";		
+					sexualidade1 = "Prefiro nï¿½o dizer";		
 				}
 				
 			}
@@ -214,10 +214,10 @@ public class User {
 				System.out.println("2. Amarelo ");
 				System.out.println("3. Pardo ");
 				System.out.println("4. Negro ");
-				System.out.println("5. Indígena ");
+				System.out.println("5. Indï¿½gena ");
 				System.out.println("6. Outros ");
-				System.out.println("7. Prefiro não dizer ");
-				System.out.print("Insira uma das opções: ");
+				System.out.println("7. Prefiro nï¿½o dizer ");
+				System.out.print("Insira uma das opï¿½ï¿½es: ");
 				etnia = entrada.nextInt();
 				if(etnia == 1) {
 					etnia1 = "Branco";
@@ -232,14 +232,14 @@ public class User {
 					etnia1 = "Negro";	
 				}
 				if(etnia == 5) {
-					etnia1 = "Indígena";	
+					etnia1 = "Indï¿½gena";	
 				}
 				if (etnia == 6) {
 					System.out.println("Informe sua etnia: ");
 					etnia1 = entrada.next();		
 				}
 				if (etnia == 7) {
-					etnia1 = "Prefiro não dizer";		
+					etnia1 = "Prefiro nï¿½o dizer";		
 				}
 				
 			}
@@ -247,22 +247,22 @@ public class User {
 			
 			System.out.println("******************************************************");
 				
-			System.out.println("Você possui alguma deficiência física?");
+			System.out.println("Vocï¿½ possui alguma deficiï¿½ncia fï¿½sica?");
 			System.out.println("1. Sim");
-			System.out.println("2. Não");
-			System.out.print("Insira uma das opções: ");
+			System.out.println("2. Nï¿½o");
+			System.out.print("Insira uma das opï¿½ï¿½es: ");
 			possuiPCD = entrada.nextInt();
 			if(possuiPCD == 1) {
-				System.out.print("Por favor, informe sua deficiência física: ");
+				System.out.print("Por favor, informe sua deficiï¿½ncia fï¿½sica: ");
 				entrada.nextLine();
 				pcds = entrada.nextLine();
 			}else {
-				pcds = "Não possui";
+				pcds = "Nï¿½o possui";
 			}
 			
 			System.out.println();
 			System.out.println("******************************************************");
-			System.out.println("Verifique se as informações estão corretas");
+			System.out.println("Verifique se as informaï¿½ï¿½es estï¿½o corretas");
 			
 			 System.out.println("Nome: " + nome );
 			 System.out.println("Idade: " + idade);
@@ -270,21 +270,21 @@ public class User {
 			 System.out.println("CPF: " + cpf);
 //			 System.out.println(senha);
 //			 System.out.println(confirmarSenha);
-			 System.out.println("Gênero" + genero1);
+			 System.out.println("Gï¿½nero" + genero1);
 			 System.out.println("Sexualidade: " + sexualidade1);
 			 System.out.println("Etnia: " + etnia1);
-			 System.out.println("Deficiência(s): " + pcds);
+			 System.out.println("Deficiï¿½ncia(s): " + pcds);
 			 
 			 System.out.println();
 			 System.out.println("******************************************************");
 			 System.out.println();
 			 
 			 
-			 System.out.println("Caso tudo esteja correto, deseja salvar estas informações e concluir o cadastro?");
+			 System.out.println("Caso tudo esteja correto, deseja salvar estas informaï¿½ï¿½es e concluir o cadastro?");
 			 System.out.println("1. Sim");
-			 System.out.println("2. Não");
-			 System.out.println("0. Voltar para a página inicial");
-			 System.out.print("Insira uma das opções: ");
+			 System.out.println("2. Nï¿½o");
+			 System.out.println("0. Voltar para a pï¿½gina inicial");
+			 System.out.print("Insira uma das opï¿½ï¿½es: ");
 			 menuConcluirCad = entrada.nextInt();
 			 
 			 if(menuConcluirCad == 1) {
@@ -295,7 +295,7 @@ public class User {
 				 System.out.println("Concluindo seu cadastro...........");
 				 Thread.sleep(400);
 				 System.out.println();
-				 System.out.println("Cadastro concluído com sucesso!");
+				 System.out.println("Cadastro concluï¿½do com sucesso!");
 				 System.out.println();
 				 menuProcuraEmprego = 1;
 				 paginaUserCad = 2;
@@ -330,10 +330,10 @@ public class User {
 			 System.out.println("******************************************************");
 			 System.out.println();
 			 if(menuProcuraEmprego == 1) {
-				System.out.println("Está procurando emprego: ");
+				System.out.println("Estï¿½ procurando emprego: ");
 				System.out.println("1. Sim ");
-				System.out.println("2. Não ");
-				System.out.print("Insira uma das opções: ");
+				System.out.println("2. Nï¿½o ");
+				System.out.print("Insira uma das opï¿½ï¿½es: ");
 				menuCurriCad = entrada.nextInt();
 				Thread.sleep(400);
 				if(menuCurriCad == 1) {
@@ -366,10 +366,10 @@ public class User {
 				System.out.println();
 				System.out.println("******************************************************");
 				System.out.println();
-				System.out.println("Currículo: ");
-				System.out.println("1. Preencher currículo ");
-				System.out.println("0. Página inicial ");	
-				System.out.print("Insira uma das opções: ");
+				System.out.println("Currï¿½culo: ");
+				System.out.println("1. Preencher currï¿½culo ");
+				System.out.println("0. Pï¿½gina inicial ");	
+				System.out.print("Insira uma das opï¿½ï¿½es: ");
 				menuCurriPreencher = entrada.nextInt();
 				Thread.sleep(400);
 			 }
@@ -379,14 +379,14 @@ public class User {
 			else if(menuCurriPreencher == 1) {
 				System.out.println("******************************************************");
 				System.out.println();
-				System.out.println("Bem vinde, " + nome + " ao construtor de currículo");
+				System.out.println("Bem vinde, " + nome + " ao construtor de currï¿½culo");
 				System.out.println();
-				System.out.println("Vamos começar a construção de seu currículo");
+				System.out.println("Vamos comeï¿½ar a construï¿½ï¿½o de seu currï¿½culo");
 				System.out.println();
 				 
 				ArrayList<Idioma> idiomaCl = new ArrayList<>();
 				
-				System.out.print("Por favor, informe quantos idiomas você fala: ");
+				System.out.print("Por favor, informe quantos idiomas vocï¿½ fala: ");
 				int numeroIdioma = entrada.nextInt();
 				entrada.nextLine();
 				for(int i = 0; i < numeroIdioma; i++) {
@@ -395,28 +395,28 @@ public class User {
 					idiomaCl.add(new Idioma(idioma));	
 				 }
 				
-		         System.out.println("Informe seu nível de escolaridade");
-		         System.out.println("1. Ensino médio - incompleto");
-		         System.out.println("2. Ensino médio - completo");
+		         System.out.println("Informe seu nï¿½vel de escolaridade");
+		         System.out.println("1. Ensino mï¿½dio - incompleto");
+		         System.out.println("2. Ensino mï¿½dio - completo");
 		         System.out.println("3. Ensino superior - cursando");
 		         System.out.println("4. Ensino superior - completo");
-		         System.out.println("5. Pós-Graduação - cursando");
-		         System.out.println("6. Pós-Graduação - completo");
+		         System.out.println("5. Pï¿½s-Graduaï¿½ï¿½o - cursando");
+		         System.out.println("6. Pï¿½s-Graduaï¿½ï¿½o - completo");
 		         System.out.println("7. Mestrado - cursando");
 		         System.out.println("8. Mestrado - completo");
 		         System.out.println("9. Doutorado - cursando");
 		         System.out.println("10. Doutorado - completo");
-		     	 System.out.print("Insira uma das opções: ");
+		     	 System.out.print("Insira uma das opï¿½ï¿½es: ");
 		         nivelEscolaridade = entrada.nextInt();
 		         
 		         if(nivelEscolaridade == 1) {
 		        	 e1.cadEnsinoMedioNaoFinalizado();
-		        	 escolaridade = "Ensino médio - incompleto";
+		        	 escolaridade = "Ensino mï¿½dio - incompleto";
 		         }
 		         
 		         if(nivelEscolaridade == 2) {
 		        	 e1.cadEnsinoMedioFinalizado();
-		        	 escolaridade = "Ensino médio - completo";
+		        	 escolaridade = "Ensino mï¿½dio - completo";
 		        	 
 		         }
 		         
@@ -436,14 +436,14 @@ public class User {
 		        	 e1.cadEnsinoMedioFinalizado();
 		        	 e1.cadFaculdadeFinalizado();
 		        	 e1.cadPosGraduacaoCursando();
-		        	 escolaridade = "Pós-graduação - cursando";
+		        	 escolaridade = "Pï¿½s-graduaï¿½ï¿½o - cursando";
 		         }
 		         
 		         if(nivelEscolaridade == 6) {
 		        	 e1.cadEnsinoMedioFinalizado();
 		        	 e1.cadFaculdadeFinalizado();
 		        	 e1.cadPosGraduacaoFinalizado();
-		        	 escolaridade = "Pós-graduação - completo";
+		        	 escolaridade = "Pï¿½s-graduaï¿½ï¿½o - completo";
 		         }
 		         
 		         if(nivelEscolaridade == 7) {
@@ -475,22 +475,22 @@ public class User {
 		         }
 				ArrayList<Curso> Curso1 = new ArrayList<>();
 				
-				System.out.print("Por favor, informe quantos cursos você possui: ");
+				System.out.print("Por favor, informe quantos cursos vocï¿½ possui: ");
 				int numeroCurso = entrada.nextInt();
 				entrada.nextLine();
 				for(int i = 0; i < numeroCurso; i++) {
 					System.out.println("Informe o nome do curso:  "+ 1+i);					
 					nomeCurso = entrada.nextLine();
 					
-					System.out.println("Informe a duração do curso: ");
+					System.out.println("Informe a duraï¿½ï¿½o do curso: ");
 					
-					System.out.print("Data início: ");
+					System.out.print("Data inï¿½cio: ");
 					dataInicioCurso = entrada.nextLine();
 					
 					System.out.print("Data fim: ");
 					dataFimCurso = entrada.nextLine();
 					
-					System.out.println("Experiência obtida: ");
+					System.out.println("Experiï¿½ncia obtida: ");
 					experienciaCurso = entrada.nextLine();
 					
 					Curso1.add(new Curso(nomeCurso, dataInicioCurso, dataFimCurso, experienciaCurso));
@@ -500,7 +500,7 @@ public class User {
 				 
 				ArrayList<Experiencia> experiencaPS = new ArrayList<>();
 					
-				System.out.print("Quantas experiências profissionais você deseja adicionar: ");
+				System.out.print("Quantas experiï¿½ncias profissionais vocï¿½ deseja adicionar: ");
 				int numeroExperiencia = entrada.nextInt();
 				entrada.nextLine();
 				
@@ -509,19 +509,19 @@ public class User {
 					nomeEmpresa = entrada.nextLine();
 				
 					
-					System.out.println("Endereço da empresa: ");
+					System.out.println("Endereï¿½o da empresa: ");
 					localDeTrabalho = entrada.nextLine();
 					 
 					System.out.println("Digite seu cargo: ");
 					 nomeCargo = entrada.nextLine();
 					 
-					System.out.println("Informe a data de início: ");
+					System.out.println("Informe a data de inï¿½cio: ");
 				    dataInicio = entrada.nextLine();
 				    
-				    System.out.println("Informe a data que saiu ou se ainda está na empresa: ");
+				    System.out.println("Informe a data que saiu ou se ainda estï¿½ na empresa: ");
 				    dataFim = entrada.nextLine();
 					 
-					System.out.println("Experiência obtida: ");
+					System.out.println("Experiï¿½ncia obtida: ");
 				    experienciaDeTrabalho = entrada.nextLine();
 					 
 					
@@ -537,7 +537,7 @@ public class User {
 				 System.out.println("CPF: " + cpf);
 //				 System.out.println(senha);
 //				 System.out.println(confirmarSenha);
-				 System.out.println("Gênero: " + genero1);
+				 System.out.println("Gï¿½nero: " + genero1);
 				 System.out.println("Sexualidade: "+ sexualidade1);
 				 System.out.println("Etnia: " + etnia1);
 				 System.out.println("Pcds: " + pcds);
@@ -556,23 +556,23 @@ public class User {
 				 if(nivelEscolaridade == 1) {
 		        	 System.out.println("Nome da escola: " + e1.ensinoMedioNome1);
 		        	 System.out.println("Local: " + e1.ensinoMediolocal1);
-		        	 System.out.println("Data início: " + e1.ensinoMedioDataInicio1);
-		        	 System.out.println("Até que série você estudou? " + e1.ensinoMedioDataFim1); 
+		        	 System.out.println("Data inï¿½cio: " + e1.ensinoMedioDataInicio1);
+		        	 System.out.println("Atï¿½ que sï¿½rie vocï¿½ estudou? " + e1.ensinoMedioDataFim1); 
 		         }
 				 
 				 if(nivelEscolaridade == 2) {
 					 System.out.println("Nome da escola: " + e1.ensinoMedioNome);
 		        	 System.out.println("Local: " + e1.ensinoMediolocal);
-		        	 System.out.println("Data início: " + e1.ensinoMedioDataInicio);
+		        	 System.out.println("Data inï¿½cio: " + e1.ensinoMedioDataInicio);
 		        	 System.out.println("Data fim: " + e1.ensinoMedioDataFim);		        	 
 		         }
 				 
 		         if(nivelEscolaridade == 3) {
 		        	 System.out.println("******************************************************");
-		        	 System.out.println("Ensino médio");
+		        	 System.out.println("Ensino mï¿½dio");
 		        	 System.out.println("Nome da escola: " + e1.ensinoMedioNome);
 		        	 System.out.println("Local: " + e1.ensinoMediolocal);
-		        	 System.out.println("Data início: " + e1.ensinoMedioDataInicio);
+		        	 System.out.println("Data inï¿½cio: " + e1.ensinoMedioDataInicio);
 		        	 System.out.println("Data fim: " + e1.ensinoMedioDataFim);
 		        	 
 		        	 
@@ -581,17 +581,17 @@ public class User {
 		        	 System.out.println("Nome da faculdade: " + e1.nomeFaculdade1);
 		        	 System.out.println("Nome do curso: " + e1.nomeCursoFaculdade1);
 		        	 System.out.println("Local: " + e1.localFaculdade1);
-		        	 System.out.println("Data início: " + e1.faculDataInicio1);
+		        	 System.out.println("Data inï¿½cio: " + e1.faculDataInicio1);
 		        	 System.out.println("Data fim: " + e1.faculDataFim1);
 		        	 
 		         }
 		         
 		         if(nivelEscolaridade == 4) {
 		        	 System.out.println("******************************************************");
-		        	 System.out.println("Ensino médio");
+		        	 System.out.println("Ensino mï¿½dio");
 		        	 System.out.println("Nome da escola: " + e1.ensinoMedioNome);
 		        	 System.out.println("Local: " + e1.ensinoMediolocal);
-		        	 System.out.println("Data início:  "+ e1.ensinoMedioDataInicio);
+		        	 System.out.println("Data inï¿½cio:  "+ e1.ensinoMedioDataInicio);
 		        	 System.out.println("Data fim: " + e1.ensinoMedioDataFim);
 		        	 
 		        	 
@@ -600,16 +600,16 @@ public class User {
 		        	 System.out.println("Nome da faculdade: " + e1.nomeFaculdade);
 		        	 System.out.println("Nome do curso: " + e1.nomeCursoFaculdade);
 		        	 System.out.println("Local: " + e1.localFaculdade);
-		        	 System.out.println("Data início: " + e1.faculDataInicio);
+		        	 System.out.println("Data inï¿½cio: " + e1.faculDataInicio);
 		        	 System.out.println("Data fim: " + e1.faculDataFim);
 		         }
 		         
 		         if(nivelEscolaridade == 5) {
 		        	 System.out.println("******************************************************");
-		        	 System.out.println("Ensino médio");
+		        	 System.out.println("Ensino mï¿½dio");
 		        	 System.out.println("Nome da escola: " + e1.ensinoMedioNome);
 		        	 System.out.println("Local: " + e1.ensinoMediolocal);
-		        	 System.out.println("Data início: "+ e1.ensinoMedioDataInicio);
+		        	 System.out.println("Data inï¿½cio: "+ e1.ensinoMedioDataInicio);
 		        	 System.out.println("Data fim: "+ e1.ensinoMedioDataFim);
 		        	 
 		        	 System.out.println("******************************************************");
@@ -618,25 +618,25 @@ public class User {
 		        	 System.out.println("Nome da faculdade: " + e1.nomeFaculdade);
 		        	 System.out.println("Nome do curso: " + e1.nomeCursoFaculdade);
 		        	 System.out.println("Local: " + e1.localFaculdade);
-		        	 System.out.println("Data início: " + e1.faculDataInicio);
+		        	 System.out.println("Data inï¿½cio: " + e1.faculDataInicio);
 		        	 System.out.println("Data fim: " + e1.faculDataFim);
 		        	 
 		        	 System.out.println("******************************************************");
 		        	 System.out.println();
-		        	 System.out.println("Pós-graduação");
+		        	 System.out.println("Pï¿½s-graduaï¿½ï¿½o");
 		        	 System.out.println("Nome da faculdade: " + e1.nomePos1);
 		        	 System.out.println("Nome do curso: " + e1.nomeCursoPos1);
 		        	 System.out.println("Local: " + e1.localPos1);
-		        	 System.out.println("Data início: " + e1.posDataInicio1);
+		        	 System.out.println("Data inï¿½cio: " + e1.posDataInicio1);
 		        	 System.out.println("Data fim: " + e1.posDataFim1);
 		         }
 		         
 		         if(nivelEscolaridade == 6) {
 		        	 System.out.println("******************************************************");
-		        	 System.out.println("Ensino médio");
+		        	 System.out.println("Ensino mï¿½dio");
 		        	 System.out.println("Nome da escola: " + e1.ensinoMedioNome);
 		        	 System.out.println("Local: " + e1.ensinoMediolocal);
-		        	 System.out.println("Data início: " + e1.ensinoMedioDataInicio);
+		        	 System.out.println("Data inï¿½cio: " + e1.ensinoMedioDataInicio);
 		        	 System.out.println("Data fim: " + e1.ensinoMedioDataFim);
 		        	 
 		        	 System.out.println("******************************************************");
@@ -644,24 +644,24 @@ public class User {
 		        	 System.out.println("Nome da faculdade: " + e1.nomeFaculdade);
 		        	 System.out.println("Nome do curso: " + e1.nomeCursoFaculdade);
 		        	 System.out.println("Local: " + e1.localFaculdade);
-		        	 System.out.println("Data início: " + e1.faculDataInicio);
+		        	 System.out.println("Data inï¿½cio: " + e1.faculDataInicio);
 		        	 System.out.println("Data fim: " + e1.faculDataFim);
 		        	 
 		        	 System.out.println("******************************************************");
-		        	 System.out.println("Pós-graduação");
+		        	 System.out.println("Pï¿½s-graduaï¿½ï¿½o");
 		        	 System.out.println("Nome da faculdade: " + e1.nomePos);
 		        	 System.out.println("Nome do curso: " + e1.nomeCursoPos);
 		        	 System.out.println("Local: " + e1.localPos);
-		        	 System.out.println("Data início: " + e1.posDataInicio);
+		        	 System.out.println("Data inï¿½cio: " + e1.posDataInicio);
 		        	 System.out.println("Data fim: " + e1.posDataFim);
 		         }
 		         
 		         if(nivelEscolaridade == 7) {
 		        	 System.out.println("******************************************************");
-		        	 System.out.println("Ensino médio");
+		        	 System.out.println("Ensino mï¿½dio");
 		        	 System.out.println("Nome da escola: " + e1.ensinoMedioNome);
 		        	 System.out.println("Local: " + e1.ensinoMediolocal);
-		        	 System.out.println("Data início: " + e1.ensinoMedioDataInicio);
+		        	 System.out.println("Data inï¿½cio: " + e1.ensinoMedioDataInicio);
 		        	 System.out.println("Data fim: " + e1.ensinoMedioDataFim);
 		        	 
 		        	 System.out.println("******************************************************");
@@ -669,7 +669,7 @@ public class User {
 		        	 System.out.println("Nome da faculdade: " + e1.nomeFaculdade);
 		        	 System.out.println("Nome do curso: " + e1.nomeCursoFaculdade);
 		        	 System.out.println("Local: " + e1.localFaculdade);
-		        	 System.out.println("Data início: " + e1.faculDataInicio);
+		        	 System.out.println("Data inï¿½cio: " + e1.faculDataInicio);
 		        	 System.out.println("Data fim: " + e1.faculDataFim);
 		        	 
 		        	 System.out.println("******************************************************");
@@ -677,16 +677,16 @@ public class User {
 		        	 System.out.println("Nome da faculdade: " + e1.nomeMestrado1);
 		        	 System.out.println("Nome do curso: " + e1.cursoMestrado1);
 		        	 System.out.println("Local: " + e1.localMestrado1);
-		        	 System.out.println("Data início: " + e1.mestradoDataInicio1);
+		        	 System.out.println("Data inï¿½cio: " + e1.mestradoDataInicio1);
 		        	 System.out.println("Data fim: " + e1.mestradoDataFim1);
 		         }
 		         
 		         if(nivelEscolaridade == 8) {
 		        	 System.out.println("******************************************************");
-		        	 System.out.println("Ensino médio");
+		        	 System.out.println("Ensino mï¿½dio");
 		        	 System.out.println("Nome da escola: " + e1.ensinoMedioNome);
 		        	 System.out.println("Local: " + e1.ensinoMediolocal);
-		        	 System.out.println("Data início: " + e1.ensinoMedioDataInicio);
+		        	 System.out.println("Data inï¿½cio: " + e1.ensinoMedioDataInicio);
 		        	 System.out.println("Data fim: " + e1.ensinoMedioDataFim);
 		        	 
 		        	 System.out.println("******************************************************");
@@ -694,7 +694,7 @@ public class User {
 		        	 System.out.println("Nome da Faculdade: " + e1.nomeFaculdade);
 		        	 System.out.println("Nome do curso: " + e1.nomeCursoFaculdade);
 		        	 System.out.println("Local: " + e1.localFaculdade);
-		        	 System.out.println("Data início: " + e1.faculDataInicio);
+		        	 System.out.println("Data inï¿½cio: " + e1.faculDataInicio);
 		        	 System.out.println("Data fim: " + e1.faculDataFim);
 		        	 
 		        	 System.out.println("******************************************************");
@@ -702,16 +702,16 @@ public class User {
 		        	 System.out.println("Nome da faculdade: " + e1.nomeMestrado);
 		        	 System.out.println("Nome do curso: " + e1.cursoMestrado);
 		        	 System.out.println("Local: " + e1.localMestrado1);
-		        	 System.out.println("Data início: " + e1.mestradoDataInicio);
+		        	 System.out.println("Data inï¿½cio: " + e1.mestradoDataInicio);
 		        	 System.out.println("Data fim: " + e1.mestradoDataFim);
 		         }
 		         
 		         if(nivelEscolaridade == 9) {
 		        	 System.out.println("******************************************************");
-		        	 System.out.println("Ensino médio");
+		        	 System.out.println("Ensino mï¿½dio");
 		        	 System.out.println("Nome da Escola: " + e1.ensinoMedioNome);
 		        	 System.out.println("Local: " + e1.ensinoMediolocal);
-		        	 System.out.println("Data início: " + e1.ensinoMedioDataInicio);
+		        	 System.out.println("Data inï¿½cio: " + e1.ensinoMedioDataInicio);
 		        	 System.out.println("Data fim: " + e1.ensinoMedioDataFim);
 		        	 
 		        	 System.out.println("******************************************************");
@@ -719,7 +719,7 @@ public class User {
 		        	 System.out.println("Nome da faculdade: " + e1.nomeFaculdade);
 		        	 System.out.println("Nome do curso: " + e1.nomeCursoFaculdade);
 		        	 System.out.println("Local: " + e1.localFaculdade);
-		        	 System.out.println("Data início: " + e1.faculDataInicio);
+		        	 System.out.println("Data inï¿½cio: " + e1.faculDataInicio);
 		        	 System.out.println("Data fim: " + e1.faculDataFim);
 		        	 
 		        	 System.out.println("******************************************************");
@@ -728,16 +728,16 @@ public class User {
 		        	 System.out.println("Nome da faculdade: " + e1.nomeDoutorado1);
 		        	 System.out.println("Nome do curso: " + e1.nomeDoutorado1);
 		        	 System.out.println("Local: "+ e1.localDoutorado1);
-		        	 System.out.println("Data início: "+ e1.doutoradoDataInicio1);
+		        	 System.out.println("Data inï¿½cio: "+ e1.doutoradoDataInicio1);
 		        	 System.out.println("Data fim: "+ e1.doutoradoDataFim1);		        	 		        	 
 		         }
 		         
 		         if(nivelEscolaridade == 10) {
 		        	 System.out.println("******************************************************");
-		        	 System.out.println("Ensino médio");
+		        	 System.out.println("Ensino mï¿½dio");
 		        	 System.out.println("Nome da Escola: " + e1.ensinoMedioNome);
 		        	 System.out.println("Local: " + e1.ensinoMediolocal);
-		        	 System.out.println("Data início: " + e1.ensinoMedioDataInicio);
+		        	 System.out.println("Data inï¿½cio: " + e1.ensinoMedioDataInicio);
 		        	 System.out.println("Data fim: " + e1.ensinoMedioDataFim);
 		        	 
 		        	 System.out.println("******************************************************");
@@ -745,7 +745,7 @@ public class User {
 		        	 System.out.println("Nome da faculdade: " + e1.nomeFaculdade);
 		        	 System.out.println("Nome do curso: " + e1.nomeCursoFaculdade);
 		        	 System.out.println("Local: " + e1.localFaculdade);
-		        	 System.out.println("Data início: " + e1.faculDataInicio);
+		        	 System.out.println("Data inï¿½cio: " + e1.faculDataInicio);
 		        	 System.out.println("Data fim: " + e1.faculDataFim);
 		        	 
 		        	 System.out.println("******************************************************");
@@ -754,7 +754,7 @@ public class User {
 		        	 System.out.println("Nome da faculdade: " + e1.nomeDoutorado);
 		        	 System.out.println("Nome do curso: " + e1.nomeDoutorado);
 		        	 System.out.println("Local: " + e1.localDoutorado);
-		        	 System.out.println("Data início: " + e1.doutoradoDataInicio);
+		        	 System.out.println("Data inï¿½cio: " + e1.doutoradoDataInicio);
 		        	 System.out.println("Data fim: " + e1.doutoradoDataFim);		
 		         }
 				 System.out.println();
@@ -762,7 +762,7 @@ public class User {
 				 System.out.println("Cursos");
 				 System.out.println();
 				 if(numeroCurso == 0) {
-					 System.out.print("Não possui curso"); 
+					 System.out.print("Nï¿½o possui curso"); 
 					 System.out.println();
 				 }
 				for(Curso c1: Curso1) {
@@ -770,10 +770,10 @@ public class User {
 					System.out.println(c1);
 		    	 }
 				 System.out.println("******************************************************");
-				 System.out.println("Experiências");
+				 System.out.println("Experiï¿½ncias");
 				 System.out.println();
 				 if(numeroExperiencia == 0) {
-					 System.out.print("Não possui experiência"); 
+					 System.out.print("Nï¿½o possui experiï¿½ncia"); 
 					 System.out.println();
 				 }
 				for(Experiencia exp: experiencaPS) {
@@ -782,11 +782,11 @@ public class User {
 		    	 }	
 				System.out.println("******************************************************");
 				
-				System.out.println("Deseja salvar o currículo?");
+				System.out.println("Deseja salvar o currï¿½culo?");
 				System.out.println("1. Sim");
-				System.out.println("2. Não");
-				System.out.println("0. Voltar para a página inicial");
-				System.out.print("Insira uma das opções: ");
+				System.out.println("2. Nï¿½o");
+				System.out.println("0. Voltar para a pï¿½gina inicial");
+				System.out.print("Insira uma das opï¿½ï¿½es: ");
 				salvarCurriculum = entrada.nextInt();
 				if (salvarCurriculum == 0) {
 					paginainicial.inicial();
@@ -794,15 +794,15 @@ public class User {
 				else if(salvarCurriculum == 1) {
 					System.out.println();
 				    System.out.println("******************************************************");
-					System.out.println("Salvando currículo..");
+					System.out.println("Salvando currï¿½culo..");
 					Thread.sleep(400);
-					System.out.println("Salvando currículo....");
+					System.out.println("Salvando currï¿½culo....");
 					Thread.sleep(400);
-					System.out.println("Salvando currículo...........");
+					System.out.println("Salvando currï¿½culo...........");
 				    Thread.sleep(400);
 				    System.out.println("******************************************************");
 				    System.out.println();
-				    System.out.println("Currículo salvo com sucesso!");
+				    System.out.println("Currï¿½culo salvo com sucesso!");
 					System.out.println();
 					System.out.println("******************************************************");
 					Thread.sleep(400);
