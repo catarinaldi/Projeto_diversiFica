@@ -1,5 +1,6 @@
 package br.com.generation.projetojava;
 
+
 import java.util.Scanner;
 
 public class Cadastro_Empregador {

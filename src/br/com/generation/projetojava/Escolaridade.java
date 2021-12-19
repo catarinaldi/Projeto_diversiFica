@@ -3,7 +3,7 @@ package br.com.generation.projetojava;
 import java.util.Scanner;
 
 public class Escolaridade {
-	 
+	
 	
 	//Ensino Medio n�o finalizado
 	 String ensinoMedioDataInicio1;

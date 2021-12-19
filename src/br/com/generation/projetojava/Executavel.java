@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Executavel {
 
 	public void oferecendovaga () throws InterruptedException {
-		
+	
 		String nomeDaVaga;
 		String area;
 		String horario;

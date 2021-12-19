@@ -8,7 +8,7 @@ public class Diversifica_main {
 		
 		Scanner entrada = new Scanner(System.in);
 		TelaInicial telaopcao = new TelaInicial();
-		
+	
 		
 		int pagina;
 			

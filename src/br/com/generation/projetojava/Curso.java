@@ -1,7 +1,6 @@
 package br.com.generation.projetojava;
 
 public class Curso {
-
 	
 	String nomeCurso;
 	String dataInicioCurso;
