@@ -5,6 +5,18 @@ import java.util.Scanner;
 public class Escolaridade {
 	 
 	
+	//Ensino Medio não finalizado
+	 String ensinoMedioDataInicio1;
+	 String ensinoMedioDataFim1;
+	 String ensinoMedioNome1;
+	 String ensinoMediolocal1;
+	
+	 //Ensino médio finalizado
+	 String ensinoMedioDataInicio;
+	 String ensinoMedioDataFim;
+	 String ensinoMedioNome;
+	 String ensinoMediolocal;
+	 
 	 //CURSANDO FACULDADE 
 	 String faculDataInicio1;
 	 String faculDataFim1;
@@ -73,149 +85,183 @@ public class Escolaridade {
 	 //METODOS
 	 Scanner entrada = new Scanner(System.in);
 	 
+	 public void cadEnsinoMedioNaoFinalizado() throws InterruptedException {	 
+	 
+	 	 System.out.print("Informe o nome da escola: ");			
+	 	 ensinoMedioNome1 = entrada.nextLine();
+			
+		 System.out.print("O local da escola: ");
+		 ensinoMediolocal1 = entrada.nextLine();
+			
+			
+		 System.out.print("Data do início da escola: ");
+		 ensinoMedioDataInicio1 = entrada.nextLine();
+		 
+		 System.out.print("Informe até que série você estudou: ");
+		 ensinoMedioDataFim1 = entrada.nextLine();
+		 
+	 }
+	 
+	 public void cadEnsinoMedioFinalizado() throws InterruptedException {
+	 
+		 System.out.print("Informe o nome da escola: ");			
+		 ensinoMedioNome = entrada.nextLine();
+			
+		 System.out.print("Local da escola: ");
+		 ensinoMediolocal = entrada.nextLine();
+			
+			
+		 System.out.print("Data início: ");
+		 ensinoMedioDataInicio = entrada.nextLine();
+		 
+		 System.out.print("Data fim: ");
+		 ensinoMedioDataFim = entrada.nextLine();
+		 
+	 }
+	 
 	 public void cadFaculdadeCursando() throws InterruptedException {
 
-	 	 System.out.print("Informe o nome da Faculdade: ");			
+	 	 System.out.print("Informe o nome da faculdade: ");			
 		 nomeFaculdade1 = entrada.nextLine();
 			
 			
-		 System.out.print("Informe o Curso que você está cursando: ");
+		 System.out.print("Informe o nome do curso: ");
 		 nomeCursoFaculdade1 = entrada.nextLine();
 			
-		 System.out.print("O local da Faculdade: ");
+		 System.out.print("O local da faculdade: ");
 		 localFaculdade1 = entrada.nextLine();
 			
 			
-		 System.out.print("Data do inicio do curso: ");
+		 System.out.print("Data início: ");
 		 faculDataInicio1 = entrada.nextLine();
 		 
-		 System.out.print("Data que você irá finalizar o curso: ");
+		 System.out.print("Data fim: ");
 		 faculDataFim1 = entrada.nextLine();
 		 
 	 }
 	 
 	 public void cadFaculdadeFinalizado() throws InterruptedException {
 
-	 	 System.out.print("Informe o nome da Faculdade: ");			
+	 	 System.out.print("Informe o nome da faculdade: ");			
 		 nomeFaculdade = entrada.nextLine();
 			
 			
-		 System.out.print("Informe o Curso que foi cursado: ");
+		 System.out.print("Informe o nome do curso: ");
 		 nomeCursoFaculdade = entrada.nextLine();
 			
-		 System.out.print("O local da Faculdade: ");
+		 System.out.print("O local da faculdade: ");
 		 localFaculdade = entrada.nextLine();
 			
 			
-		 System.out.print("Data do inicio do curso: ");
+		 System.out.print("Data início: ");
 		 faculDataInicio = entrada.nextLine();
 		 
-		 System.out.print("Data que voce finalizou o curso: ");
+		 System.out.print("Data fim: ");
 		 faculDataFim = entrada.nextLine();
 		 
 	 }
 	 
 	 public void cadPosGraduacaoCursando() throws InterruptedException {
 		 
-	 	 System.out.print("Informe o nome do lugar que está fazendo a Pós: ");			
+	 	 System.out.print("Informe o nome da faculdade que está estudando a pós: ");			
 	 	 nomePos1 = entrada.nextLine();
 			
 			
-		 System.out.print("Informe o Curso de Pós Graduação que você está cursando: ");
+		 System.out.print("Informe nome do curso de pós-graduação: ");
 		 nomeCursoPos1 = entrada.nextLine();
 			
 		 System.out.print("Local: ");
 		 localPos1 = entrada.nextLine();
 			
 			
-		 System.out.print("Data do inicio: ");
+		 System.out.print("Data início: ");
 		 posDataInicio1 = entrada.nextLine();
 		 
-		 System.out.print("Data do termino do curso: ");
+		 System.out.print("Data fim: ");
 		 posDataFim1 = entrada.nextLine();
 		 
 	 }
 	 
 	 public void cadPosGraduacaoFinalizado() throws InterruptedException {
 
-	 	 System.out.print("Informe o nome do lugar que está fazendo a Pós: ");			
+	 	 System.out.print("Informe o nome da faculdade que estudou a pós: ");			
 	 	 nomePos = entrada.nextLine();
 			
 			
-		 System.out.print("Informe o Curso de Pós Graduação que você cursou: ");
+		 System.out.print("Informe o nome do curso de pós-graduação: ");
 		 nomeCursoPos = entrada.nextLine();
 			
 		 System.out.print("Local: ");
 		 localPos = entrada.nextLine();
 			
 			
-		 System.out.print("Data do inicio: ");
+		 System.out.print("Data início: ");
 		 posDataInicio = entrada.nextLine();
 		 
-		 System.out.print("Data que você finalizou: ");
+		 System.out.print("Data fim: ");
 		 posDataFim = entrada.nextLine();
 		 
 	 }
 	 
 	 public void cadMestradoCursando() throws InterruptedException {
 		 
-	 	 System.out.print("Informe o nome do lugar que está cursando o Mestrado: ");			
+	 	 System.out.print("Informe o nome da faculdade que está estudando o mestrado: ");			
 	 	 nomeMestrado1 = entrada.nextLine();
 			
 			
-		 System.out.print("Informe o Curso de Mestrado que você está cursando: ");
+		 System.out.print("Informe o nome do curso de mestrado: ");
 		 cursoMestrado1 = entrada.nextLine();
 			
 		 System.out.print("Local: ");
 		 localMestrado1 = entrada.nextLine();
 			
 			
-		 System.out.print("Data do inicio: ");
+		 System.out.print("Data início: ");
 		 mestradoDataInicio1 = entrada.nextLine();
 		 
-		 System.out.print("Data que você finalizou: ");
+		 System.out.print("Data fim: ");
 		 mestradoDataFim1 = entrada.nextLine();
 		 
 	 }
 	 
 	 public void cadMestradoFinalizado() throws InterruptedException {
 
-	 	 System.out.print("Informe o nome do lugar que você cursou o Mestrado: ");			
+	 	 System.out.print("Informe o nome da faculdade que estudou o mestrado: ");			
 	 	 nomeMestrado = entrada.nextLine();
 			
 			
-		 System.out.print("Informe o nome do curso de Mestrado que você cursou  ");
+		 System.out.print("Informe o nome do curso de mestrado: ");
 		 cursoMestrado = entrada.nextLine();
 			
 		 System.out.print("Local: ");
 		 localMestrado = entrada.nextLine();
 			
 			
-		 System.out.print("Data do inicio: ");
+		 System.out.print("Data início: ");
 		 mestradoDataInicio = entrada.nextLine();
 		 
-		 System.out.print("Data que você finalizou: ");
+		 System.out.print("Data fim: ");
 		 mestradoDataFim = entrada.nextLine();
 		 
 	 }
 	 
 	 public void cadDoutoradoCursando() throws InterruptedException {
 		 
-	 	 System.out.print("Informe o nome do lugar que está cursando o Doutorado: ");			
+	 	 System.out.print("Informe o nome da faculdade que está estudando o doutorado: ");			
 	 	 nomeDoutorado1 = entrada.nextLine();
 			
 			
-		 System.out.print("Informe o Curso de Doutorado que você está cursando: ");
+		 System.out.print("Informe o nome do curso de doutorado: ");
 		 cursoDoutorado1 = entrada.nextLine();
 			
 		 System.out.print("Local: ");
 		 localDoutorado1 = entrada.nextLine();
 			
 			
-		 System.out.print("Data do inicio: ");
+		 System.out.print("Data início: ");
 		 doutoradoDataInicio1 = entrada.nextLine();
 		 
-		 System.out.print("Data que você finalizou: ");
+		 System.out.print("Data fim: ");
 		 doutoradoDataFim1 = entrada.nextLine();
 		 
 	 }
@@ -223,21 +269,21 @@ public class Escolaridade {
 	 public void cadDoutoradoFinalizado() throws InterruptedException {
 	 
 		 
-	 	 System.out.print("Informe o nome do lugar que você cursou o Doutorado: ");			
+	 	 System.out.print("Informe o nome da faculdade que estudou o doutorado: ");			
 	 	 nomeDoutorado = entrada.nextLine();
 			
 			
-		 System.out.print("Informe o nome do curso de Doutorado que você cursou  ");
+		 System.out.print("Informe o nome do curso de doutorado: ");
 		 cursoDoutorado = entrada.nextLine();
 			
 		 System.out.print("Local: ");
 		 localDoutorado = entrada.nextLine();
 			
 			
-		 System.out.print("Data do inicio: ");
+		 System.out.print("Data início: ");
 		 doutoradoDataInicio = entrada.nextLine();
 		 
-		 System.out.print("Data que você finalizou: ");
+		 System.out.print("Data fim: ");
 		 doutoradoDataFim = entrada.nextLine();
 		 
 	 }

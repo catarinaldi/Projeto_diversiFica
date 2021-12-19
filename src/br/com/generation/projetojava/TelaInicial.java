@@ -1,42 +1,46 @@
-package MinhaParte;
+package br.com.generation.projetojava;
 
 import java.util.Scanner;
 
 public class TelaInicial {
 
-	public static void main(String[] args) {
+	public  void opcoesCadastro () throws InterruptedException {
+		PaginaInicial pagina = new PaginaInicial ();
+		User cadastro = new User ();
+		Cadastro_Empregador empresa = new Cadastro_Empregador ();
+		Scanner entrada = new Scanner(System.in);
 		
-		Scanner read = new Scanner(System.in);
 		
-		String Empregador, Empregado, ListaDeEmpresas;
 		int opcao;
 		
-		System.out.println("=========Escolha uma das opções abaixo=======");
+		System.out.println("=============Escolha uma das opções abaixo:=============");
 		
 		System.out.println();
-		System.out.println("1) - Empregador \n2) - Empregado \n3) - Lista de Empresas (Apenas olhar) \n0) - Início");
+		System.out.println("1. Empregador \n2. Empregado \n3. Lista de Empresas (Apenas olhar) \n0. Página inicial");
 		
-		System.out.println("Digite a opção: ");
-		opcao = read.nextInt();
+		System.out.print("Insira uma das opções: ");
+		opcao = entrada.nextInt();
 		
 		
 		while(opcao != 1 && opcao != 2 && opcao != 3 && opcao != 0) {
 			
-			System.out.println("DIGITE A OPÇÃO VÁLIDA");
-			opcao = read.nextInt();
+			System.out.println("DIGITE UMA OPÇÃO VÁLIDA!");
+			opcao = entrada.nextInt();
 		}
 		
 		if(opcao == 1 ) {
-			System.out.println("EMPREGADOR");
+			empresa.cadastroEmpresa();
 		}
 		else if(opcao == 2) {
-			System.out.println("EMPREGADO");
+			cadastro.cadastrar();
+			
 		}
 		else if(opcao == 3) {
-			System.out.println("LISTA DE EMPRESAS");
+			System.out.println("=============LISTA DE EMPRESAS=============");
 		}
-		else if(opcao == 0) {
-			System.out.println("Início");
+		else  {
+			pagina.inicial();
 		}
+		entrada.close();
 	}
 }

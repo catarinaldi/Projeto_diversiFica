@@ -2,23 +2,27 @@ package br.com.generation.projetojava;
 
 import java.util.Scanner;
 
-public class Diversifica_main {
+	public class PaginaInicial {
 	
-	public static void main (String [] args) throws InterruptedException {
-		
+		public void inicial () throws InterruptedException {
+	
 		Scanner entrada = new Scanner(System.in);
+		
 		TelaInicial telaopcao = new TelaInicial();
 		
+	
+		int pagina = 0;
 		
-		int pagina;
-			
+		
 		System.out.println("=============Olá! Bem vinde ao DivesiFica=============");
 		
 		
+	
+	
 		System.out.println();
-		
-		System.out.println("1. Criar conta");
-		System.out.println("2. Lista de empresas");
+	
+		System.out.println("1. Criar Conta");
+		System.out.println("2. Lista de Empresas");
 		System.out.print("Insira uma das opções: ");
 		pagina = entrada.nextInt();
 		while(pagina != 1 && pagina != 2 ) {
@@ -31,9 +35,10 @@ public class Diversifica_main {
 		else {
 			System.out.println("\n=============LISTA DE EMPRESAS=============\n");
 		}
-		
-		
+	
+	
 		entrada.close();
+
 	}
 
 }
