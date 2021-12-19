@@ -13,18 +13,18 @@ public class TelaInicial {
 		
 		int opcao;
 		
-		System.out.println("=============Escolha uma das opï¿½ï¿½es abaixo:=============");
+		System.out.println("=============Escolha uma das opções abaixo:=============");
 		
 		System.out.println();
-		System.out.println("1. Empregador \n2. Empregado \n3. Lista de Empresas (Apenas olhar) \n0. Pï¿½gina inicial");
+		System.out.println("1. Empregador \n2. Empregado \n3. Lista de Empresas (Apenas olhar) \n0. Página inicial");
 		
-		System.out.print("Insira uma das opï¿½ï¿½es: ");
+		System.out.print("Insira uma das opções: ");
 		opcao = entrada.nextInt();
 		
 		
 		while(opcao != 1 && opcao != 2 && opcao != 3 && opcao != 0) {
 			
-			System.out.println("DIGITE UMA OPï¿½ï¿½O Vï¿½LIDA!");
+			System.out.println("DIGITE UMA OPÇÃO VÁLIDA!");
 			opcao = entrada.nextInt();
 		}
 		

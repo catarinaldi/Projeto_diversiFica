@@ -15,8 +15,8 @@ public class Curso {
 	}
 	@Override
 	public String toString() {
-		return "\nCurso: " + nomeCurso + "\nData inï¿½cio: " + dataInicioCurso + "\nData fim: "
-				+ dataFimCurso + "\nExperiï¿½ncia obtida: " + experienciaCurso;
+		return "\nCurso: " + nomeCurso + "\nData início: " + dataInicioCurso + "\nData fim: "
+				+ dataFimCurso + "\nExperiência obtida: " + experienciaCurso;
 	}
 	
 	

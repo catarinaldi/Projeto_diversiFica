@@ -24,7 +24,7 @@ public class Experiencia {
 		@Override
 		public String toString() {
 			return "\nNome da empresa: " + nomeEmpresa + "\nCargo: " + nomeCargo +  "\nLocal de trabalho: " + localDeTrabalho
-					+ "\nData inï¿½cio: " + dataInicio + "\nData fim: " + dataFim + "\nExperiï¿½ncia: " + experienciaDeTrabalho;
+					+ "\nData início: " + dataInicio + "\nData fim: " + dataFim + "\nExperiência: " + experienciaDeTrabalho;
 		}
 		
 		
