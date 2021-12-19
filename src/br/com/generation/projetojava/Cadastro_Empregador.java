@@ -10,29 +10,29 @@ public class Cadastro_Empregador {
 	
 	public  void cadastroEmpresa() throws InterruptedException {
 		
-//			=============DECLARAÇÃO DE MÉTODOS ==============	
+//			=============DECLARAï¿½ï¿½O DE Mï¿½TODOS ==============	
 		Scanner entrada = new Scanner(System.in);
 		PaginaInicial paginaInicial = new PaginaInicial ();
 		Executavel oferecendoVaga = new Executavel ();
 
-//			=============DECLARAÇÃO DE VARIÁVEIS=============			
+//			=============DECLARAï¿½ï¿½O DE VARIï¿½VEIS=============			
 		
 		String nomeEmpresa , CNPJ = "" , email  ;
 		int num = 10, opc = 0, cadastro, i = 0, j = 0;
 		int[] formularioDiversidade = new int[8];
 		boolean valorRepetido = false;
 		
-//			=============ENTRANDO NA PÁGINA DE CADASTRO=============
+//			=============ENTRANDO NA Pï¿½GINA DE CADASTRO=============
 		
-		System.out.println("Selecione 1 para a página 'Cadastro do empregador'");
+		System.out.println("Selecione 1 para a pï¿½gina 'Cadastro do empregador'");
 		cadastro = entrada.nextInt();
 		if (cadastro != 1) {
-			System.out.println("\n=============Opção inválida!=============\n");
+			System.out.println("\n=============Opï¿½ï¿½o invï¿½lida!=============\n");
 		} else {
 			
 		System.out.println("\n=============CADASTRO DO EMPREGADOR=============\n");
 		
-//			=============CADASTRO: INFOS BÁSICAS=============
+//			=============CADASTRO: INFOS Bï¿½SICAS=============
 		
 		System.out.println("Nome da empresa: ");
 		nomeEmpresa = entrada.next();
@@ -40,29 +40,29 @@ public class Cadastro_Empregador {
 //			=============CNPJ RESTRINGIDO A 14 CARACTERES=============
 		
 		while (CNPJ.length() != 14) {
-			System.out.println("CNPJ (apenas números (14)): ");
+			System.out.println("CNPJ (apenas nï¿½meros (14)): ");
 			CNPJ = entrada.next();
 			if (CNPJ.length() != 14) {
-					System.out.println("Valor inválido!");
+					System.out.println("Valor invï¿½lido!");
 			}
 		}
 		
 		System.out.println("Email: ");
 		email = entrada.next();
 		
-//			=============SELEÇÃO DE INCLUSÕES SEM NÚMERO ERRADO OU REPETIDO=============
+//			=============SELEï¿½ï¿½O DE INCLUSï¿½ES SEM Nï¿½MERO ERRADO OU REPETIDO=============
 		
 			while (num != 0) {
-				System.out.println("Selecione qual(is) o(s) ícone(s) de inclusão você participa na sua empresa: ");
-				System.out.println("1. Sexualidade; \n2. Gênero; \n3. Deficiência Física; \n4. Deficiência Auditiva;"
-						+ "\n5. Deficiência Visual; \n6. Deficiência Intelectual; \n7. Etnica; \n8. Todos acima; \n0. Pressione 0 para sair");
+				System.out.println("Selecione qual(is) o(s) ï¿½cone(s) de inclusï¿½o vocï¿½ participa na sua empresa: ");
+				System.out.println("1. Sexualidade; \n2. Gï¿½nero; \n3. Deficiï¿½ncia Fï¿½sica; \n4. Deficiï¿½ncia Auditiva;"
+						+ "\n5. Deficiï¿½ncia Visual; \n6. Deficiï¿½ncia Intelectual; \n7. Etnica; \n8. Todos acima; \n0. Pressione 0 para sair");
 				num = entrada.nextInt();
 			
 			if (num == 0) {
 				System.out.println("\n=============Cadastro completo!=============\n");	
 			} else {
 				if (num > 8) {
-					System.out.println("\n=============Valor inválido!=============\n");
+					System.out.println("\n=============Valor invï¿½lido!=============\n");
 				} else {
 					for (j = 0; j < formularioDiversidade.length; j++) {
 						if (num == formularioDiversidade[j]) {
@@ -70,7 +70,7 @@ public class Cadastro_Empregador {
 						}
 					}
 					if (valorRepetido == true) {
-						System.out.println("\n=============Opção inválida!=============\n");
+						System.out.println("\n=============Opï¿½ï¿½o invï¿½lida!=============\n");
 						valorRepetido = false;
 					}else {
 						formularioDiversidade[i] = num;
@@ -80,7 +80,7 @@ public class Cadastro_Empregador {
 			}		
 		}
 				
-//				=============MOSTRANDO VALORES SELECIONADOS NO FORMULÁRIO=============
+//				=============MOSTRANDO VALORES SELECIONADOS NO FORMULï¿½RIO=============
 		
 		System.out.print("Valores selecionados: " + formularioDiversidade[i] + " | ");
 		for (i = 0; i < formularioDiversidade.length; i++) {
@@ -89,21 +89,21 @@ public class Cadastro_Empregador {
 		
 		System.out.println("\n");
 		
-//		=============CADASTRO FINALIZADO: REDIRECIONAMENTO PARA OUTRAS PÁGINAS=============
+//		=============CADASTRO FINALIZADO: REDIRECIONAMENTO PARA OUTRAS Pï¿½GINAS=============
 		
 		while (opc != 1 && opc != 2) {
-			System.out.println("Pressione: \n1. Para voltar para a página inicial; \n2. Para cadastrar uma vaga");
+			System.out.println("Pressione: \n1. Para voltar para a pï¿½gina inicial; \n2. Para cadastrar uma vaga");
 			opc = entrada.nextInt();
 			
 			if(opc == 1) {
-				System.out.println("\n=============Página Inicial=============\n");
+				System.out.println("\n=============Pï¿½gina Inicial=============\n");
 				paginaInicial.inicial();
 			} else if (opc == 2) {
-				System.out.println("\n=============Página de Cadastro de Vaga=============\n");
+				System.out.println("\n=============Pï¿½gina de Cadastro de Vaga=============\n");
 				
 				oferecendoVaga.oferecendovaga();
 			} else {
-				System.out.println("\n=============Opção inválida!=============\n");
+				System.out.println("\n=============Opï¿½ï¿½o invï¿½lida!=============\n");
 			}
 		}
 
