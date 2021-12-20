@@ -8,6 +8,7 @@ public class Diversifica_main {
 		
 		Scanner entrada = new Scanner(System.in);
 		TelaInicial telaopcao = new TelaInicial();
+		TestaDados lista = new TestaDados();
 	
 		
 		int pagina;
@@ -29,7 +30,7 @@ public class Diversifica_main {
 			telaopcao.opcoesCadastro();	
 		}
 		else {
-			System.out.println("\n=============LISTA DE EMPRESAS=============\n");
+			lista.listaEmpresas();
 		}
 		
 		

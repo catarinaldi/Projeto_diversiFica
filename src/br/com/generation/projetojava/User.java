@@ -270,7 +270,7 @@ public class User {
 			 System.out.println("CPF: " + cpf);
 //			 System.out.println(senha);
 //			 System.out.println(confirmarSenha);
-			 System.out.println("Gênero" + genero1);
+			 System.out.println("Gênero: " + genero1);
 			 System.out.println("Sexualidade: " + sexualidade1);
 			 System.out.println("Etnia: " + etnia1);
 			 System.out.println("Deficiência(s): " + pcds);
@@ -390,7 +390,7 @@ public class User {
 				int numeroIdioma = entrada.nextInt();
 				entrada.nextLine();
 				for(int i = 0; i < numeroIdioma; i++) {
-					System.out.println("Informe o idioma (1 por vez): "+ 1+i);					
+					System.out.println("Informe o idioma (1 por vez): ");					
 					idioma = entrada.nextLine();				
 					idiomaCl.add(new Idioma(idioma));	
 				 }
@@ -479,10 +479,8 @@ public class User {
 				int numeroCurso = entrada.nextInt();
 				entrada.nextLine();
 				for(int i = 0; i < numeroCurso; i++) {
-					System.out.println("Informe o nome do curso:  "+ 1+i);					
+					System.out.println("Informe o nome do curso:  ");					
 					nomeCurso = entrada.nextLine();
-					
-					System.out.println("Informe a duração do curso: ");
 					
 					System.out.print("Data início: ");
 					dataInicioCurso = entrada.nextLine();
@@ -760,7 +758,6 @@ public class User {
 				 System.out.println();
 				 System.out.println("******************************************************");
 				 System.out.println("Cursos");
-				 System.out.println();
 				 if(numeroCurso == 0) {
 					 System.out.print("Não possui curso"); 
 					 System.out.println();

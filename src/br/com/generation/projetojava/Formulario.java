@@ -308,6 +308,7 @@ public class Formulario {
 	}
 		public void verListaEmpresa () throws InterruptedException {
 		PaginaInicial paginainicial = new PaginaInicial();
+		TestaDados lista = new TestaDados();
 		
 		Scanner entrada = new Scanner(System.in);
 		
@@ -324,7 +325,7 @@ public class Formulario {
 			System.out.println();
 			System.out.println("***************************************************");
 			
-			System.out.println("=============LISTA DE EMPRESAS=============");
+			lista.listaEmpresas();
 		}
 		else {
 			System.out.println();

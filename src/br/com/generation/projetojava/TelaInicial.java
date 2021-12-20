@@ -8,6 +8,7 @@ public class TelaInicial {
 		PaginaInicial pagina = new PaginaInicial ();
 		User cadastro = new User ();
 		Cadastro_Empregador empresa = new Cadastro_Empregador ();
+		TestaDados lista = new TestaDados();
 		Scanner entrada = new Scanner(System.in);
 		
 		
@@ -36,7 +37,7 @@ public class TelaInicial {
 			
 		}
 		else if(opcao == 3) {
-			System.out.println("=============LISTA DE EMPRESAS=============");
+			lista.listaEmpresas();
 		}
 		else  {
 			pagina.inicial();

@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class TestaDados {
 
-	public void listaEmpresas() {
+	public void listaEmpresas() throws InterruptedException {
 		PaginaInicial paginainicial = new PaginaInicial();
 		
 		Dados empresa1 = new Dados("Empresa Unicórnio", "Cuidador Sr.", 09.00, 17.00, 5600.00, "LGBTQIA+; Equidade de gênero (transgênero); Étnico-racial");
@@ -32,7 +32,7 @@ public class TestaDados {
 		filtrarLista();
 	}
 	
-	public void filtrarLista() {
+	public void filtrarLista() throws InterruptedException {
 		PaginaInicial paginainicial = new PaginaInicial();
 
 		Scanner entrada = new Scanner(System.in);
@@ -65,7 +65,7 @@ public class TestaDados {
 		}
 	}
 	
-	public void filtrarIcones() {
+	public void filtrarIcones() throws InterruptedException {
 		PaginaInicial paginainicial = new PaginaInicial();
 
 		Scanner entrada = new Scanner(System.in);
@@ -158,7 +158,7 @@ public class TestaDados {
 		}
 	}
 	
-	public void enviarCurriculo() {
+	public void enviarCurriculo() throws InterruptedException {
 		PaginaInicial paginainicial = new PaginaInicial();
 
 		Scanner entrada = new Scanner(System.in);
@@ -201,7 +201,7 @@ public class TestaDados {
 		}
 	}
 	
-	public void filtrarSalario() {
+	public void filtrarSalario() throws InterruptedException {
 		PaginaInicial paginainicial = new PaginaInicial();
 
 		Scanner entrada = new Scanner(System.in);

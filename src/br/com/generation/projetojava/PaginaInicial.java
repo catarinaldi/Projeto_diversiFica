@@ -9,6 +9,7 @@ import java.util.Scanner;
 		Scanner entrada = new Scanner(System.in);
 		
 		TelaInicial telaopcao = new TelaInicial();
+		TestaDados lista = new TestaDados();
 		
 	
 		int pagina = 0;
@@ -33,7 +34,7 @@ import java.util.Scanner;
 			telaopcao.opcoesCadastro();	
 		}
 		else {
-			System.out.println("\n=============LISTA DE EMPRESAS=============\n");
+			lista.listaEmpresas();
 		}
 	
 	
