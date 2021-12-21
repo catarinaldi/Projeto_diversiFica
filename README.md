@@ -12,3 +12,4 @@
 <p align="left"><strong>Equipe:</strong> Bruno Ribeiro, Catarina Rinaldi, Igor Miramisawa, Sarah Nani e Thiago Batista
 <br>
 </p>
+    <a href="https://www.behance.net/gallery/133631911/diversiFica" target=_blank"><img src="https://img.shields.io/badge/Behance-000?style=for-the-badge&logo=ko-fi&logoColor=white"></a>
